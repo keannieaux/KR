@@ -1,0 +1,88 @@
+.poppinsFont{
+    font-family: "Poppins";
+}
+.dm-sansFont{
+    font-family: "DM Sans";
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+  }
+.boby{
+    background: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+}
+.header{
+    background-color: #00353B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.header>div{
+    width: 63.5%;
+    padding-left: 29.7px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 34px;
+    gap: 11%;
+}
+.header-block2{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 40%;
+    gap: 6%;
+}
+.search{
+    display:flex;
+    align-items:center;
+    gap: 13%;
+}
+.shopping_cart{
+    display:flex;
+    align-items:center;
+    gap: 30%;
+    margin-left: 20px;
+}
+.text-a{
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+.text-search{
+    color:#FFFFFF;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+.text-shopping-cart{
+    color: #FFFFFF;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+.text-sign{
+    color:black;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+.block-sign{
+    margin-left: 33px;
+    padding: 0.5px 11px;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+}
+.header-nav{
+    display:flex;
+    gap: 8.3%;
+}
+.header-block1{
+    width: 62%;
+}
+
