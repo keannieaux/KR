@@ -167,3 +167,108 @@ main>div{
     line-height: 1.5em;
     font-size: 1em;
 }
+.main-best{
+    background-color:#00353B;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    padding-bottom: 400px;
+}
+.text-main-best{
+    color:#FFFFFF;
+    font-size: 1.125em;
+}
+.main-premium{
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items:start;
+}
+.main-premium1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 54.19%;
+    background-color:#FCD8CA;
+    padding: 97px 248px;
+    border: 0.5px solid #FCD8CA;
+    border-radius: 21px;
+    margin-top: -230px;
+    gap: 25px;
+}
+.text-main-premium1{
+    color:#1F2937;
+    font-size: 3em;
+}
+.text-main-premium2{
+    color:#000000;
+    line-height: 1.5em;
+    font-size: 1.125em;
+    text-align: center;
+}
+.text-main-premium3{
+    color:#FFFFFF;
+    font-size: 1em;
+}
+.main-button-premium{
+    background-color:#1F2937;
+    padding: 15px 43.9px;
+    border: 0.5px solid #1F2937;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.block-premium{
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.block-premium1{
+    display:flex;
+    width: 83.8%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+.text-block-premium1{
+    color:#1F2937;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+.text-block-premium2{
+    color:#4B5563;
+    font-size: 1.125em;
+    line-height: 1.49em;
+}
+.text-block-premium3{
+    color:#FFFFFF;
+    font-size: 1em;
+}
+.text-block-premium4{
+    color:#111827;
+    font-size: 1em;
+}
+.block-premium2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.button-premium{
+    display:flex;
+    gap: 40px;
+}
+.button-premium1{
+    padding: 13.5px 47px;
+    border: 0.5px solid #1F2937;
+    border-radius: 8px;
+    background-color:#1F2937;
+}
+.button-premium2{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap: 13.5px;
+}
