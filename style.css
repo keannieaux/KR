@@ -436,6 +436,7 @@ main>div{
 .text-join4{
     font-size: 1em;
     color:#FFFFFF;
+    text-align: center;
 }
 .block-text-join{
     width: 78.6%;
@@ -486,4 +487,84 @@ main>div{
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+.block-benefits{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#FFFFFF;
+    flex-direction: column;
+}
+.block-benefits1{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 190px;
+    gap: 10px;
+}
+.block-benefits2{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.benefits{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 80px;
+}
+.text-benefits1{
+    font-size: 3em;
+    color:#1F2937;
+    line-height: 1.2em;
+    text-align: center;
+}
+.text-benefits2{
+    font-size: 1.12em;
+    color:#374151;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+}
+.block-benefits3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 55px;
+}
+.block-benefits4{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+.block-benefits5{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+.block-benefits6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 93px;
+}
+.button-benefits{
+    width: 10%;
+    padding: 13px 23px;
+    border: 0.5px solid #1F2937;
+    border-radius: 6px;
+    background-color: #1F2937;
 }
