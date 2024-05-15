@@ -10,11 +10,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     font-size: 100%;
     font: inherit;
-  }
-.boby{
-    background: #FFFFFF;
+}
+body{
+    background-color: #FFFFFF;
     margin: 0 auto;
     width: 100%;
+}
+body.dark{
+    background-color: #001618;
+    color:#fffffff1;
 }
 .header{
     background-color: #00353B;
@@ -22,6 +26,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     justify-content: center;
     align-items: center;
     padding-bottom: 2%;
+}
+body.dark .header{
+    background-color: #001618;
+    color:#FFFFFF;
 }
 .header>div{
     width: 63.5%;
@@ -91,6 +99,10 @@ main>div{
     align-items:center;
     background-color: #00353B;
 }
+body.dark main>div{
+    background-color: #001618;
+    color:#FFFFFF;
+}
 .main-block{
     margin-top: 60px;
     display: flex;
@@ -100,6 +112,10 @@ main>div{
     background-color:#00353B;
     gap: 5%;
     margin-bottom: 60px;
+}
+body.dark .main-block{
+    background-color: #001618;
+    color:#FFFFFF;
 }
 .main-block1{
     display:flex;
@@ -237,10 +253,16 @@ main>div{
     font-size: 3em;
     line-height: 1.2em;
 }
+body.dark .text-block-premium1{
+    color:#FFFFFF;
+}
 .text-block-premium2{
     color:#4B5563;
     font-size: 1.125em;
     line-height: 1.49em;
+}
+body.dark .text-block-premium2{
+    color:#FFFFFF;
 }
 .text-block-premium3{
     color:#FFFFFF;
@@ -324,12 +346,18 @@ main>div{
     font-size: 3em;
     color:#1F2937;
 }
+body.dark .text-trending2{
+    color:#FFFFFF;
+}
 .text-trending3{
     text-align: center;
     font-size: 1.125em;
     color: #4B5563;
     padding-top: 21.5px;
     line-height: 1.5em;
+}
+body.dark .text-trending3{
+    color:#FFFFFF;
 }
 .img-trending{
     display:flex;
@@ -476,10 +504,16 @@ main>div{
     color:#1F2937;
     font-size: 1.5em;
 }
+body.dark .text-browse1{
+    color:#FFFFFF;
+}
 .text-browse2{
     color: #4B5563;
     font-size: 1em;
     line-height: 1.5em;
+}
+body.dark .text-browse2{
+    color:#FFFFFF;
 }
 .block-browse1{
     padding-top: 25px;
@@ -525,12 +559,18 @@ main>div{
     line-height: 1.2em;
     text-align: center;
 }
+body.dark .text-benefits1{
+    color:#FFFFFF;
+}
 .text-benefits2{
     font-size: 1.12em;
     color:#374151;
     line-height: 1.5em;
     text-align: center;
     padding-top: 20px;
+}
+body.dark .text-benefits2{
+    color:#FFFFFF;
 }
 .block-benefits3{
     display: flex;
@@ -587,6 +627,10 @@ main>div{
     gap: 77px;
     padding-bottom: 90px;
 }
+body.dark .block-testimonials1{
+    border: 0.5px solid #83716a;
+    background-color:#83716a;
+}
 .block-testimonials2{
     display:flex;
     flex-direction: column;
@@ -614,13 +658,23 @@ main>div{
     padding-left: 40px;
     gap: 60px;
 }
+body.dark .block-testimonials4{
+    border: 0.5px solid #696969;
+    background-color: #696969;
+}
 .text-testimonials1{
     color:#111827;
     font-size: 1em;
 }
+body.dark .text-testimonials1{
+    color:#ffffff;
+}
 .text-testimonials2{
     color:#6B7280;
     font-size:1em;
+}
+body.dark .text-testimonials2{
+    color:#ffffff;
 }
 .block-text-testimonials{
     display:flex;
@@ -676,6 +730,9 @@ main>div{
     padding-top: 20px;
     gap: 45px;
     padding-bottom: 18px;
+}
+body.dark .block-blog4{
+    background-color:#696969;
 }
 .button-block-blog1{
     width: 7.7%;
@@ -763,6 +820,9 @@ footer p{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+body.dark .footer{
+    background-color:#001618;
 }
 .block-footer{
     width: 89%;
