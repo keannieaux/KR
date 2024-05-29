@@ -1146,7 +1146,7 @@ body.dark .footer{
     .header-nav {
         display: none;
       }
-      .header-block2{
+      .header-block{
         display: none;
       }
       .burger-menu {
@@ -1170,7 +1170,7 @@ body.dark .footer{
         transition: all 0.3s ease-in-out;
       }
       
-      .header-block1 {
+      .header-block {
         position: fixed;
         top: 50px;
         right: -250px;
@@ -1193,22 +1193,6 @@ body.dark .footer{
         text-decoration: none;
         color: #333;
       }
-      .search p{
-        color: #333;
-      }
-      #se{
-        filter: invert(1);
-      }
-      #shop{
-        filter: invert(1);
-      }
-      .shopping_cart{
-        margin: 0;
-        gap: 13%;
-      }
-      .shopping_cart p{
-        color: #333;
-      }
       .burger-menu.open span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
@@ -1221,21 +1205,10 @@ body.dark .footer{
         transform: rotate(-45deg) translate(5px, -5px);
       }
       
-      .header-block1.open {
+      .header-block.open {
         right: 0;
       }  
-      
-      body.dark .burger-menu span{
-        background-color: #fff;
-      }
     
-      .burger {
-        display: block; 
-      }
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
   }
 
   @media(max-width: 550px){
