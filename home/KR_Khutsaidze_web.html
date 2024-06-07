@@ -25,62 +25,64 @@
                 <nav class="header-nav">
                     <button id="button-light" onclick="toggleTheme()"></button>
                     <button id="languageButton" onclick="toggleLanguage()">Toggle Language</button>
-                    <a href="" class="dm-sansFont text-a" id="home"></a>
-                    <a href="" class="dm-sansFont text-a" id="about"></a>
-                    <a href="" class="dm-sansFont text-a" id="blog"></a>
-                    <a href="" class="dm-sansFont text-a" id="contact"></a>
-                    <a href="" class="dm-sansFont text-a" id="courses"></a>
+                    <a href="#homes" class="dm-sansFont text-a" id="home"></a>
+                    <a href="#abouts" class="dm-sansFont text-a" id="about"></a>
+                    <a href="#blogs" class="dm-sansFont text-a" id="blog"></a>
+                    <a href="#contacts" class="dm-sansFont text-a" id="contact"></a>
+                    <a href="#cours" class="dm-sansFont text-a" id="courses"></a>
                     <div class="search">
-                        <img src="./image/search.svg" alt="search" id="se">
+                        <img src="../general/image/search.svg" alt="search" id="se">
                         <p class="dm-sansFont text-search" id="ser"></p>
                     </div>
                     <div class="shopping_cart">
-                        <img src="./image/shopping_cart.svg" alt="shopping_cart" id="shop">
+                        <img src="../general/image/shopping_cart.svg" alt="shopping_cart" id="shop">
                         <p class="dm-sansFont text-shopping-cart" id="cart"></p>
                     </div>
-                    <div class="block-sign">
+                    <div class="block-sign" id="si">
                         <p class="dm-sansFont text-sign" id="signup"></p>
                     </div>
-                    <div class="block-sign">
+                    <div class="block-sign" id="ou">
                         <p class="dm-sansFont text-sign" id="aut"></p>
                     </div>
+                    <span id="usernameDisplay" class="dm-sansFont usernameDisplay" style="display: none;"></span>
+                    <button class="block-sign" id="logout" style="display: none; font-family: DM Sans; font-size: 1.2em">Log out</button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
         <div>
-            <div class="main-block">
+            <div class="main-block" id="homes">
                 <div class="main-block1">
                     <div class="main-block2">
                         <p class="poppinsFont main-text1" id="beco"></p>
                         <p class="dm-sansFont main-text2" id="lor"></p>
                     </div>
                     <div class="main-block3">
-                        <div class="main-button1" id="knopka-cours">
+                        <div class="main-button1 user-only" id="knopka-cours" style="display: none">
                             <p class="dm-sansFont button-text1" id="ex"></p>
                         </div>
                         <div class="main-button2">
                             <p class="dm-sansFont button-text1" id="wat"></p>
-                            <img src="./image/play.svg" alt="play">
+                            <img src="../general/image/play.svg" alt="play">
                         </div>
                     </div>
                     <div class="main-block4">
-                        <img src="./image/people.svg" alt="people">
+                        <img src="../general/image/people.svg" alt="people">
                         <div class="main-star">
                             <div class="star">
-                                <img src="./image/star.svg" alt="star">
-                                <img src="./image/star.svg" alt="star">
-                                <img src="./image/star.svg" alt="star">
-                                <img src="./image/star.svg" alt="star">
-                                <img src="./image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
                             </div>
                             <p class="dm-sansFont star-text" id="fro"></p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="./image/family.svg" alt="family" id="fam">
+                    <img src="../general/image/family.svg" alt="family" id="fam">
                 </div>
             </div>
         </div>
@@ -92,17 +94,17 @@
             <p class="dm-sansFont text-main-best" id="trus"></p>
         </div>
         <div class="main-premium">
-            <div class="main-premium1">
+            <div class="main-premium1" id="abouts">
                 <p class="poppinsFont text-main-premium1" id="no"></p>
                 <p class="dm-sansFont text-main-premium2" id="lor1"></p>
-                <div class="main-button-premium" id="knopka-about">
+                <div class="main-button-premium user-only" id="knopka-about" style="display: none;">
                     <a class="dm-sansFont text-main-premium3" id="ab"></a>
                 </div>
             </div>
         </div>
         <div class="block-premium">
             <div class="block-premium1">
-                <img src="./image/woman.svg" alt="woman" id="wo">
+                <img src="../general/image/woman.svg" alt="woman" id="wo">
                 <div class="block-premium2">
                     <p class="poppinsFont text-block-premium1" id="pre"></p>
                     <p class="dm-sansFont text-block-premium2" id="lor2"></p>
@@ -112,7 +114,7 @@
                         </div>
                         <div class="button-premium2">
                             <p class="dm-sansFont text-block-premium4" id="lea"></p>
-                            <img src="./image/chevron_right.svg" alt="chevron_right">
+                            <img src="../general/image/chevron_right.svg" alt="chevron_right">
                         </div>
                     </div>
                 </div>
@@ -129,15 +131,14 @@
                             </div>
                             <div class="button-premium2">
                                 <p class="dm-sansFont text-block-premium4" id="le"></p>
-                                <img src="./image/chevron_right.svg" alt="chevron_right">
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
                             </div>
                         </div>
                     </div>
-                    <img src="./image/people1.svg" alt="people1" id="pep">
+                    <img src="../general/image/people1.svg" alt="people1" id="pep">
                 </div>
             </div>
-        </div>
-        <div class="block-trending">
+        <div class="block-trending" id="cours">
             <div class="block-trending1">
                 <div class="block-trending2">
                     <div class="text-trending">
@@ -146,7 +147,7 @@
                     <p class="poppinsFont text-trending2" id="the"></p>
                     <p class="dm-sansFont text-trending3" id="lor4"></p>
                 </div>
-                    <div class="slider">
+                    <div class="slider user-only" style="display: none;">
                         <div class="img-trending">
                             <div class="img-pc">
                                 <div class="imgpcc"></div>
@@ -289,9 +290,9 @@
                             </div>
                         </div>
                   </div>
-                  <div class="slid">
-                    <button onclick="prevSlide1()">Предыдущие блоки</button>
-                    <button onclick="nextSlide1()">Следующие блоки</button>
+                  <div class="slid user-only" style="display: none;">
+                    <button class="slid1" onclick="prevSlide1()">Предыдущие блоки</button>
+                    <button class="slid2" onclick="nextSlide1()">Следующие блоки</button>
                   </div>
                     </div>
             </div>
@@ -312,25 +313,25 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./image/work.svg" alt="work" id="wor">
+                    <img src="../general/image/work.svg" alt="work" id="wor">
                 </div>
                 <div class="block-browse">
                     <div >
-                        <img src="./image/people2.svg" alt="people2">
+                        <img src="../general/image/people2.svg" alt="people2">
                         <div class="block-browse1">
                         <p class="poppinsFont text-browse1" id="brow"></p>
                         <p class="dm-sansFont text-browse2" id="lor6"></p>
                         </div>
                     </div>
                     <div >
-                        <img src="./image/safe.svg" alt="safe">
+                        <img src="../general/image/safe.svg" alt="safe">
                         <div class="block-browse1">
                         <p class="poppinsFont text-browse1" id="pur"></p>
                         <p class="dm-sansFont text-browse2" id="lor7"></p>
                         </div>    
                     </div>
                     <div>
-                        <img src="./image/study.svg" alt="study">
+                        <img src="../general/image/study.svg" alt="study">
                         <div class="block-browse1">
                         <p class="poppinsFont text-browse1" id="st"></p>
                         <p class="dm-sansFont text-browse2" id="lor8"></p>
@@ -351,25 +352,25 @@
                 <div class="block-benefits2">
                     <div class="block-benefits3">
                         <div class="block-benefits4">
-                            <img src="./image/book.svg" alt="book">
+                            <img src="../general/image/book.svg" alt="book">
                             <p class="poppinsFont text-browse1" id="ov"></p>
                             <p class="dm-sansFont text-browse2" id="lor10"></p>
                         </div>
                         <div class="block-benefits4">
-                            <img src="./image/people3.svg" alt="people3">
+                            <img src="../general/image/people3.svg" alt="people3">
                             <p class="poppinsFont text-browse1" id="tea"></p>
                             <p class="dm-sansFont text-browse2" id="lor11"></p>
                         </div>
                     </div>
-                    <img src="./image/laptop.svg" alt="laptop" id="lap">
+                    <img src="../general/image/laptop.svg" alt="laptop" id="lap">
                     <div class="block-benefits6">
                         <div class="block-benefits5">
-                            <img src="./image/smile.svg" alt="smile">
+                            <img src="../general/image/smile.svg" alt="smile">
                             <p class="poppinsFont text-browse1" id="onli"></p>
                             <p class="dm-sansFont text-browse2" id="lor12"></p>
                         </div>
                         <div class="block-benefits5">
-                            <img src="./image/man.svg" alt="man">
+                            <img src="../general/image/man.svg" alt="man">
                             <p class="poppinsFont text-browse1" id="on1"></p>
                             <p class="dm-sansFont text-browse2" id="lor13"></p>
                         </div>
@@ -383,7 +384,7 @@
         <div class="block-testimonials">
             <div class="block-testimonials1">
                 <div class="block-testimonials2">
-                    <div id="knopka-ots">
+                    <div id="knopka-ots" class="knopka user-only" style="display: none;">
                         <p class="dm-sansFont text-join1" id="test"></p>
                     </div>
                     <p class="poppinsFont text-benefits1" id="wha"></p>
@@ -393,15 +394,15 @@
                     <div class="block-testimonials3">
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2" id="lor15"></p>
                             <div class="block-testimonials6">
-                                <img src="./image/man1.svg" alt="man1">
+                                <img src="../general/image/man1.svg" alt="man1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1" id="or"></p>
                                     <p class="dm-sansFont text-testimonials2" id="jun"></p>
@@ -410,15 +411,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2" id="lor16"></p>
                             <div class="block-testimonials6">
-                                <img src="./image/woman1.svg" alt="woman1">
+                                <img src="../general/image/woman1.svg" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1" id="mo"></p>
                                     <p class="dm-sansFont text-testimonials2" id="des"></p>
@@ -427,15 +428,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div >
                             <p class="dm-sansFont text-browse2" id="lor17"></p>
                             <div class="block-testimonials6">
-                                <img src="./image/woman2.svg" alt="woman2">
+                                <img src="../general/image/woman2.svg" alt="woman2">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1" id="lori"></p>
                                     <p class="dm-sansFont text-testimonials2" id="ux"></p>
@@ -446,15 +447,15 @@
                     <div class="block-testimonials3">
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel4.png" alt="woman1">
+                                <img src="../general/image/chel4.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -463,15 +464,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel5.png" alt="woman1">
+                                <img src="../general/image/chel5.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -480,15 +481,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel6.png" alt="woman1">
+                                <img src="../general/image/chel6.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -499,15 +500,15 @@
                     <div class="block-testimonials3">
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel7.png" alt="woman1">
+                                <img src="../general/image/chel7.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -516,15 +517,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel8.png" alt="woman1">
+                                <img src="../general/image/chel8.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -533,15 +534,15 @@
                         </div>
                         <div class="block-testimonials4">
                             <div class="block-testimonial5">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
-                                <img src="./image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
                             </div>
                             <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
                             <div class="block-testimonials6">
-                                <img src="./image/chel9.png" alt="woman1">
+                                <img src="../general/image/chel9.png" alt="woman1">
                                 <div class="block-text-testimonials">
                                     <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
                                     <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
@@ -557,7 +558,7 @@
                 </div>
             </div>
         </div>
-        <div class="block-blog">
+        <div class="block-blog" id="blogs">
             <div class="block-blog1">
                 <div class="block-blog2">
                     <div class="button-block-blog1">
@@ -571,8 +572,8 @@
                     </div>
                 </div>
                 <div class="block-blog3">
-                    <div>
-                        <img src="./image/woman3.svg" alt="woman3" id="kiw">
+                    <div class="blog11">
+                        <img src="../general/image/woman3.svg" alt="woman3" id="kiw">
                         <div class="block-blog4">
                             <div class="block-blog5">
                             <div class="button-block-blog2">
@@ -583,12 +584,12 @@
                             <p class="dm-sansFont text-browse2" id="lor18"></p>
                             <div class="button-block-blog3">
                                 <p class="dm-sansFont text-block-blog2" id="rm"></p>
-                                <img src="./image/chevron_right.svg" alt="chevron_right">
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="./image/laptop1.svg" alt="laptop1" id="kiw">
+                    <div class="blog11">
+                        <img src="../general/image/laptop1.svg" alt="laptop1" id="kiw2">
                         <div class="block-blog4">
                             <div class="block-blog5">
                             <div class="button-block-blog2">
@@ -599,12 +600,12 @@
                             <p class="dm-sansFont text-browse2" id="lor19"></p>
                             <div class="button-block-blog3">
                                 <p class="dm-sansFont text-block-blog2" id="rem"></p>
-                                <img src="./image/chevron_right.svg" alt="chevron_right">
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="./image/laptop2.svg" alt="laptop2" id="kiw">
+                    <div class="blog11">
+                        <img src="../general/image/laptop2.svg" alt="laptop2" id="kiw1">
                         <div class="block-blog4">
                             <div class="block-blog5">
                             <div class="button-block-blog2">
@@ -615,7 +616,7 @@
                             <p class="dm-sansFont text-browse2" id="lor20"></p>
                             <div class="button-block-blog3">
                                 <p class="dm-sansFont text-block-blog2" id="remo"></p>
-                                <img src="./image/chevron_right.svg" alt="chevron_right">
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
                             </div>
                         </div>
                     </div>
@@ -636,13 +637,13 @@
                 </div>
             </div>
         </div>
-        <div class="about-me">
-            <h2>О себе</h2>
+        <div class="about-me" id="contacts">
+            <h2 id="oseb" class="poppinsFont">О себе</h2>
             <ul>
-              <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-              <li>Телефон: <a href="tel:+1234567890">+1234567890</a></li>
-              <li>Локация: <a href="#" id="open-map">Посмотреть на карте</a></li>
-              <li>GitHub: <a href="https://github.com/your-github-username" target="_blank">your-github-username</a></li>
+              <li class="dm-sansFont">Email: <a href="https://mail.google.com/mail/u/0/#inbox">keannieaux@gmail.com</a></li>
+              <li class="dm-sansFont">Telephone: <a href="tel:+375333518145">+375333518145</a></li>
+              <li class="dm-sansFont">Location: <a href="#" id="open-map">Map</a></li>
+              <li class="dm-sansFont">GitHub: <a href="https://github.com/keannieaux" target="_blank">keannieaux</a></li>
             </ul>
           </div>
         
@@ -675,7 +676,7 @@
                             <p id="ont"></p>
                             <p id="log"></p>
                             <p id="ours"></p>
-                            <p itemref="che"></p>
+                            <p id="che"></p>
                         </div>
                     </div>
                     <div class="block-footer4">
@@ -721,20 +722,20 @@
                     <p id="wd"></p>
                 </div>
                 <div class="img-contact">
-                    <img src="./image/facebook.svg" alt="facebook">
-                    <img src="./image/twitter.svg" alt="twitter">
-                    <img src="./image/instagram.svg" alt="instagram">
+                    <img src="../general/image/facebook.svg" alt="facebook">
+                    <img src="../general/image/twitter.svg" alt="twitter">
+                    <img src="../general/image/instagram.svg" alt="instagram">
                 </div>
             </div>
         </div>
     </footer>
-</body>
-<script src="script.js"></script>
+    <script src="../general/script.js"></script>
 <script src="thema.js"></script>
 <script src="translat.js"></script>
 <script src="slider.js"></script>
 <script src="pagination.js"></script>
-<script src="scripts.js"></script>
+<script src="../general/scripts.js"></script>
 <script src="map.js"></script>
-<script src="burgerglav.js"></script>
+<script src="../general/burger.js"></script>
+</body>
 </html>

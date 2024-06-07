@@ -124,7 +124,8 @@
 "min": "Минимальный квадрат",
 "oiw": ". Работает на",
 "aut": "Авторизация",
-"wd": "Webflow"
+"wd": "Webflow",
+"oseb": "О себе"
     },
     "en": {
         "button-light": "Thema",
@@ -251,6 +252,7 @@
         "min": "Minimal Square",
         "oiw": ". Powered by",
         "aut": "Autorization",
-        "wd": "Webflow"
+        "wd": "Webflow",
+        "oseb": "About Me"
     }
   }

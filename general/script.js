@@ -1,18 +1,18 @@
 document.getElementById("signup").addEventListener("click", function() {
-  window.location.href = "reg.html";
+  window.location.href = "../registration/reg.html";
 });
 
 document.getElementById("aut").addEventListener("click", function() {
-  window.location.href = "regauto.html";
+  window.location.href = "../autorization/regauto.html";
 });
   document.getElementById("knopka-about").addEventListener("click", function() {
-    window.location.href = "AboutCourse.html";
+    window.location.href = "../about/AboutCourse.html";
   });
 
   document.getElementById("knopka-cours").addEventListener("click", function() {
-    window.location.href = "course.html";
+    window.location.href = "../courses/course.html";
   });
 
   document.getElementById("knopka-ots").addEventListener("click", function() {
-    window.location.href = "reviews.html";
+    window.location.href = "../reviews/reviews.html";
   });
