@@ -204,7 +204,7 @@ body.dark .main-block{
     align-items:start;
 }
 .imgpcc{
-    content: url("/general/image/pc.svg");
+    content: url("../general/image/pc.svg");
     width: 100%;
 }
 .imgpcc2{
