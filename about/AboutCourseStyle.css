@@ -135,13 +135,13 @@ text-align: left;
 width: 100%;
 }
 .pr1{
-    content: url("/general/image/pr1.png");
+    content: url("../general/image/pr1.png");
 }
 .pr2{
-    content: url("/general/image/pr2.png");
+    content: url("../general/image/pr2.png");
 }
 .pr3{
-    content: url("/general/image/pr3.png");
+    content: url("../general/image/pr3.png");
 }
 .footer{
     background-color:#00353B;
