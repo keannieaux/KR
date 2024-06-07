@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="header-block1" id="headerBlock">
+                <nav class="header-nav">
+                    <button id="button-light" onclick="toggleTheme()"></button>
+                    <button id="languageButton" onclick="toggleLanguage()">Toggle Language</button>
+                    <a href="#homes" class="dm-sansFont text-a" id="home"></a>
+                    <a href="#abouts" class="dm-sansFont text-a" id="about"></a>
+                    <a href="#blogs" class="dm-sansFont text-a" id="blog"></a>
+                    <a href="#contacts" class="dm-sansFont text-a" id="contact"></a>
+                    <a href="#cours" class="dm-sansFont text-a" id="courses"></a>
+                    <div class="search">
+                        <img src="../general/image/search.svg" alt="search" id="se">
+                        <p class="dm-sansFont text-search" id="ser"></p>
+                    </div>
+                    <div class="shopping_cart">
+                        <img src="../general/image/shopping_cart.svg" alt="shopping_cart" id="shop">
+                        <p class="dm-sansFont text-shopping-cart" id="cart"></p>
+                    </div>
+                    <div class="block-sign" id="si">
+                        <p class="dm-sansFont text-sign" id="signup"></p>
+                    </div>
+                    <div class="block-sign" id="ou">
+                        <p class="dm-sansFont text-sign" id="aut"></p>
+                    </div>
+                    <span id="usernameDisplay" class="dm-sansFont usernameDisplay" style="display: none;"></span>
+                    <button class="block-sign" id="logout" style="display: none; font-family: DM Sans; font-size: 1.2em">Log out</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="main-block" id="homes">
+                <div class="main-block1">
+                    <div class="main-block2">
+                        <p class="poppinsFont main-text1" id="beco"></p>
+                        <p class="dm-sansFont main-text2" id="lor"></p>
+                    </div>
+                    <div class="main-block3">
+                        <div class="main-button1 user-only" id="knopka-cours" style="display: none">
+                            <p class="dm-sansFont button-text1" id="ex"></p>
+                        </div>
+                        <div class="main-button2">
+                            <p class="dm-sansFont button-text1" id="wat"></p>
+                            <img src="../general/image/play.svg" alt="play">
+                        </div>
+                    </div>
+                    <div class="main-block4">
+                        <img src="../general/image/people.svg" alt="people">
+                        <div class="main-star">
+                            <div class="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                                <img src="../general/image/star.svg" alt="star">
+                            </div>
+                            <p class="dm-sansFont star-text" id="fro"></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="../general/image/family.svg" alt="family" id="fam">
+                </div>
+            </div>
+        </div>
+        <div class="admin-only" style="display: none;">
+            <h2>Admin Content</h2>
+            <p>This content is only visible to admin users.</p>
+          </div>
+        <div class="main-best">
+            <p class="dm-sansFont text-main-best" id="trus"></p>
+        </div>
+        <div class="main-premium">
+            <div class="main-premium1" id="abouts">
+                <p class="poppinsFont text-main-premium1" id="no"></p>
+                <p class="dm-sansFont text-main-premium2" id="lor1"></p>
+                <div class="main-button-premium user-only" id="knopka-about" style="display: none;">
+                    <a class="dm-sansFont text-main-premium3" id="ab"></a>
+                </div>
+            </div>
+        </div>
+        <div class="block-premium">
+            <div class="block-premium1">
+                <img src="../general/image/woman.svg" alt="woman" id="wo">
+                <div class="block-premium2">
+                    <p class="poppinsFont text-block-premium1" id="pre"></p>
+                    <p class="dm-sansFont text-block-premium2" id="lor2"></p>
+                    <div class="button-premium">
+                        <div class="button-premium1">
+                            <p class="dm-sansFont text-block-premium3" id="ge"></p>
+                        </div>
+                        <div class="button-premium2">
+                            <p class="dm-sansFont text-block-premium4" id="lea"></p>
+                            <img src="../general/image/chevron_right.svg" alt="chevron_right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-perfect">
+            <div class="block-perfect1">
+                    <div class="block-perfect2">
+                        <p class="poppinsFont text-block-premium1" id="eas"></p>
+                        <p class="dm-sansFont text-block-premium2" id="lor3"></p>
+                        <div class="button-premium">
+                            <div class="button-premium1">
+                                <p class="dm-sansFont text-block-premium3" id="gt"></p>
+                            </div>
+                            <div class="button-premium2">
+                                <p class="dm-sansFont text-block-premium4" id="le"></p>
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../general/image/people1.svg" alt="people1" id="pep">
+                </div>
+            </div>
+        <div class="block-trending" id="cours">
+            <div class="block-trending1">
+                <div class="block-trending2">
+                    <div class="text-trending">
+                        <p class="dm-sansFont text-trending1" id="tre"></p>
+                    </div>
+                    <p class="poppinsFont text-trending2" id="the"></p>
+                    <p class="dm-sansFont text-trending3" id="lor4"></p>
+                </div>
+                    <div class="slider user-only" style="display: none;">
+                        <div class="img-trending">
+                            <div class="img-pc">
+                                <div class="imgpcc"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1" id="beg"></p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2" id="web"></p>
+                                        <p class="dm-sansFont text-img-pc3">$ 24.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4" id="ent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc2"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1" id="beg1"></p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2" id="web1"></p>
+                                        <p class="dm-sansFont text-img-pc3">$ 55.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4" id="ent1"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc3"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1" id="beg2"></p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2" id="adv"></p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4" id="ent2"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-trending">
+                            <div class="img-pc">
+                                <div class="imgpcc4"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc5"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc6"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-trending">
+                            <div class="img-pc">
+                                <div class="imgpcc7"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc8"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-pc">
+                                <div class="imgpcc9"></div>
+                                <div class="text-img-pc">
+                                    <div class="text-block-pc">
+                                        <div class="button-img-pc">
+                                            <p class="dm-sansFont text-img-pc1">Beginner</p>
+                                        </div>
+                                        <p class="poppinsFont text-img-pc2">Advanced CMS and Integrations</p>
+                                        <p class="dm-sansFont text-img-pc3">$ 38.00 USD</p>
+                                    </div>
+                                    <div class="button-img-pc1">
+                                        <p class="dm-sansFont text-img-pc4">Enroll Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="slid user-only" style="display: none;">
+                    <button class="slid1" onclick="prevSlide1()">Предыдущие блоки</button>
+                    <button class="slid2" onclick="nextSlide1()">Следующие блоки</button>
+                  </div>
+                    </div>
+            </div>
+        <div class="block-join">
+            <div class="block-join1">
+                <div class="block-join2">
+                    <div class="block-join3">
+                        <div class="block-text-join">
+                            <div class="block-text-join1">
+                                <div class="button-text-join1">
+                                    <p class="dm-sansFont text-join1" id="jo"></p>
+                                </div>
+                                <p class="poppinsFont text-join2" id="joi"></p>
+                            </div>
+                            <p class="dm-sansFont text-join3" id="lor5"></p>
+                            <div class="button-text-join2">
+                                <p class="dm-sansFont text-join4" id="gte"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../general/image/work.svg" alt="work" id="wor">
+                </div>
+                <div class="block-browse">
+                    <div >
+                        <img src="../general/image/people2.svg" alt="people2">
+                        <div class="block-browse1">
+                        <p class="poppinsFont text-browse1" id="brow"></p>
+                        <p class="dm-sansFont text-browse2" id="lor6"></p>
+                        </div>
+                    </div>
+                    <div >
+                        <img src="../general/image/safe.svg" alt="safe">
+                        <div class="block-browse1">
+                        <p class="poppinsFont text-browse1" id="pur"></p>
+                        <p class="dm-sansFont text-browse2" id="lor7"></p>
+                        </div>    
+                    </div>
+                    <div>
+                        <img src="../general/image/study.svg" alt="study">
+                        <div class="block-browse1">
+                        <p class="poppinsFont text-browse1" id="st"></p>
+                        <p class="dm-sansFont text-browse2" id="lor8"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-benefits">
+            <div class="benefits">
+                <div class="block-benefits1">
+                    <div class="text-trending">
+                        <p class="dm-sansFont text-join1" id="benea"></p>
+                    </div>
+                    <p class="poppinsFont text-benefits1" id="gro"></p>
+                    <p class="dm-sansFont text-benefits2" id="lor9"></p>
+                </div>
+                <div class="block-benefits2">
+                    <div class="block-benefits3">
+                        <div class="block-benefits4">
+                            <img src="../general/image/book.svg" alt="book">
+                            <p class="poppinsFont text-browse1" id="ov"></p>
+                            <p class="dm-sansFont text-browse2" id="lor10"></p>
+                        </div>
+                        <div class="block-benefits4">
+                            <img src="../general/image/people3.svg" alt="people3">
+                            <p class="poppinsFont text-browse1" id="tea"></p>
+                            <p class="dm-sansFont text-browse2" id="lor11"></p>
+                        </div>
+                    </div>
+                    <img src="../general/image/laptop.svg" alt="laptop" id="lap">
+                    <div class="block-benefits6">
+                        <div class="block-benefits5">
+                            <img src="../general/image/smile.svg" alt="smile">
+                            <p class="poppinsFont text-browse1" id="onli"></p>
+                            <p class="dm-sansFont text-browse2" id="lor12"></p>
+                        </div>
+                        <div class="block-benefits5">
+                            <img src="../general/image/man.svg" alt="man">
+                            <p class="poppinsFont text-browse1" id="on1"></p>
+                            <p class="dm-sansFont text-browse2" id="lor13"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-benefits">
+                    <p class="dm-sansFont text-join4" id="gs"></p>
+                </div>
+            </div>
+        </div>
+        <div class="block-testimonials">
+            <div class="block-testimonials1">
+                <div class="block-testimonials2">
+                    <div id="knopka-ots" class="knopka user-only" style="display: none;">
+                        <p class="dm-sansFont text-join1" id="test"></p>
+                    </div>
+                    <p class="poppinsFont text-benefits1" id="wha"></p>
+                    <p class="dm-sansFont text-benefits2" id="lor14"></p>
+                </div>
+                <div class="pagin">
+                    <div class="block-testimonials3">
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2" id="lor15"></p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/man1.svg" alt="man1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1" id="or"></p>
+                                    <p class="dm-sansFont text-testimonials2" id="jun"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2" id="lor16"></p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/woman1.svg" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1" id="mo"></p>
+                                    <p class="dm-sansFont text-testimonials2" id="des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div >
+                            <p class="dm-sansFont text-browse2" id="lor17"></p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/woman2.svg" alt="woman2">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1" id="lori"></p>
+                                    <p class="dm-sansFont text-testimonials2" id="ux"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-testimonials3">
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel4.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel5.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel6.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-testimonials3">
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel7.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel8.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-testimonials4">
+                            <div class="block-testimonial5">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                                <img src="../general/image/star1.svg" alt="star1">
+                            </div>
+                            <p class="dm-sansFont text-browse2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                            <div class="block-testimonials6">
+                                <img src="../general/image/chel9.png" alt="woman1">
+                                <div class="block-text-testimonials">
+                                    <p class="dm-sansFont text-testimonials1">Mollie Hall</p>
+                                    <p class="dm-sansFont text-testimonials2">Design System Manager, @Company</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slid">
+                    <button onclick="prevSlide()">Предыдущие блоки</button>
+                    <div class="pagination">1/3</div>
+                    <button onclick="nextSlide()">Следующие блоки</button>
+                </div>
+            </div>
+        </div>
+        <div class="block-blog" id="blogs">
+            <div class="block-blog1">
+                <div class="block-blog2">
+                    <div class="button-block-blog1">
+                        <p class="dm-sansFont text-join1" id="bl"></p>
+                    </div>
+                    <div class="block-latest">
+                        <p class="poppinsFont text-block-blog1" id="oer"></p>
+                        <div>
+                            <p class="dm-sansFont text-block-blog2" id="viewall"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-blog3">
+                    <div class="blog11">
+                        <img src="../general/image/woman3.svg" alt="woman3" id="kiw">
+                        <div class="block-blog4">
+                            <div class="block-blog5">
+                            <div class="button-block-blog2">
+                                <p class="dm-sansFont text-join1" id="free"></p>
+                            </div>
+                            <p class="poppinsFont text-browse1" id="fr7"></p>
+                            </div>
+                            <p class="dm-sansFont text-browse2" id="lor18"></p>
+                            <div class="button-block-blog3">
+                                <p class="dm-sansFont text-block-blog2" id="rm"></p>
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog11">
+                        <img src="../general/image/laptop1.svg" alt="laptop1" id="kiw2">
+                        <div class="block-blog4">
+                            <div class="block-blog5">
+                            <div class="button-block-blog2">
+                                <p class="dm-sansFont text-join1" id="ui"></p>
+                            </div>
+                            <p class="poppinsFont text-browse1" id="brad"></p>
+                            </div>
+                            <p class="dm-sansFont text-browse2" id="lor19"></p>
+                            <div class="button-block-blog3">
+                                <p class="dm-sansFont text-block-blog2" id="rem"></p>
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog11">
+                        <img src="../general/image/laptop2.svg" alt="laptop2" id="kiw1">
+                        <div class="block-blog4">
+                            <div class="block-blog5">
+                            <div class="button-block-blog2">
+                                <p class="dm-sansFont text-join1" id="bus"></p>
+                            </div>
+                            <p class="poppinsFont text-browse1" id="wedere"></p>
+                            </div>
+                            <p class="dm-sansFont text-browse2" id="lor20"></p>
+                            <div class="button-block-blog3">
+                                <p class="dm-sansFont text-block-blog2" id="remo"></p>
+                                <img src="../general/image/chevron_right.svg" alt="chevron_right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-start">
+            <div class="block-start1">
+                <p class="poppinsFont text-block-blog1" id="stle"></p>
+                <p class="dm-sansFont text-start1" id="lor21"></p>
+                <div class="button-start">
+                    <div class="button-block-start1">
+                        <p class="dm-sansFont text-join4" id="gst"></p>
+                    </div>
+                    <div class="button-block-start2">
+                        <p class="dm-sansFont text-block-start2" id="usco"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me" id="contacts">
+            <h2 id="oseb" class="poppinsFont">О себе</h2>
+            <ul>
+              <li class="dm-sansFont">Email: <a href="https://mail.google.com/mail/u/0/#inbox">keannieaux@gmail.com</a></li>
+              <li class="dm-sansFont">Telephone: <a href="tel:+375333518145">+375333518145</a></li>
+              <li class="dm-sansFont">Location: <a href="#" id="open-map">Map</a></li>
+              <li class="dm-sansFont">GitHub: <a href="https://github.com/keannieaux" target="_blank">keannieaux</a></li>
+            </ul>
+          </div>
+        
+          <!-- Модальное окно для карты -->
+          <div id="mapModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="map"></div>
+            </div>
+          </div>
+    </main>
+    <footer class="footer">
+        <div class="block-footer">
+            <div class="block-footer1">
+                <div class="block-footer2">
+                    <p id="ji"></p>
+                    <div class="button-pole">
+                        <div class="pole"></div>
+                        <div class="button-sub">
+                            <p id="cri"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-footer3">
+                    <div class="block-footer4">
+                        <p id="ges"></p>
+                        <div class="block-footer5">
+                            <p id="ome"></p>
+                            <p id="out"></p>
+                            <p id="ont"></p>
+                            <p id="log"></p>
+                            <p id="ours"></p>
+                            <p id="che"></p>
+                        </div>
+                    </div>
+                    <div class="block-footer4">
+                        <p id="cms"></p>
+                        <div class="block-footer5">
+                            <p id="blopo"></p>
+                            <p id="blocat"></p>
+                            <p id="cousin"></p>
+                            <p id="coucat"></p>
+                            <p id="propa"></p>
+                            <p id="procat"></p>
+                            <p id="teasin"></p>
+                            <p id="episin"></p>
+                        </div>
+                    </div>
+                    <div class="block-footer4">
+                        <p id="accpa"></p>
+                        <div class="block-footer5">
+                            <p id="gin"></p>
+                            <p id="ups"></p>
+                            <p id="forpas"></p>
+                            <p id="reste"></p>
+                            <p id="mail"></p>
+                        </div>
+                    </div>
+                    <div class="block-footer4">
+                        <p id="utili"></p>
+                        <div class="block-footer5">
+                            <p id="tul"></p>
+                            <p id="cha"></p>
+                            <p id="loc"></p>
+                            <p>404</p>
+                            <p id="passw"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-contact">
+                <div class="block-contact1">
+                    <p>© Learnico by</p>
+                    <p id="min"></p>
+                    <p id="oiw"></p>
+                    <p id="wd"></p>
+                </div>
+                <div class="img-contact">
+                    <img src="../general/image/facebook.svg" alt="facebook">
+                    <img src="../general/image/twitter.svg" alt="twitter">
+                    <img src="../general/image/instagram.svg" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../general/script.js"></script>
+<script src="thema.js"></script>
+<script src="translat.js"></script>
+<script src="slider.js"></script>
+<script src="pagination.js"></script>
+<script src="../general/scripts.js"></script>
+<script src="map.js"></script>
+<script src="../general/burger.js"></script>
+</body>
+</html>
