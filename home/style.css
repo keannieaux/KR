@@ -208,35 +208,35 @@ body.dark .main-block{
     width: 100%;
 }
 .imgpcc2{
-    content: url("/general/image/pc2.svg");
+    content: url("../general/image/pc2.svg");
     width: 100%;
 }
 .imgpcc3{
-    content: url("/general/image/pc3.svg");
+    content: url("../general/image/pc3.svg");
     width: 100%;
 }
 .imgpcc4{
-    content: url("/general/image/pc4.png");
+    content: url("../general/image/pc4.png");
     width: 100%;
 }
 .imgpcc5{
-    content: url("/general/image/pc5.png");
+    content: url("../general/image/pc5.png");
     width: 100%;
 }
 .imgpcc6{
-    content: url("/general/image/pc6.png");
+    content: url("../general/image/pc6.png");
     width: 100%;
 }
 .imgpcc7{
-    content: url("/general/image/pc7.png");
+    content: url("../general/image/pc7.png");
     width: 100%;
 }
 .imgpcc8{
-    content: url("/general/image/pc8.png");
+    content: url("../general/image/pc8.png");
     width: 100%;
 }
 .imgpcc9{
-    content: url("/general/image/pc9.png");
+    content: url("../general/image/pc9.png");
     width: 100%;
 }
 .main-premium1{
